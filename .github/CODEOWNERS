@@ -1,18 +1,1 @@
-# Each line is a file pattern followed by one or more owners.
-
-# These owners will be the default owners for everything in
-# the repo. Unless a later match takes precedence,
 * @fulll/chapter-validators-core @fulll/chapter-validators-platform-operations
-
-# admins
-CODEOWNERS @fulll/chapter-validators-core @fulll/chapter-validators-platform-operations
-LICENSE* @fulll/chapter-validators-core @fulll/chapter-validators-platform-operations
-.github/** @fulll/chapter-validators-core @fulll/chapter-validators-platform-operations
-
-# maintainers - protect potential interface changes by maintainer team
-/*.* @fulll/chapter-validators-core @fulll/chapter-validators-platform-operations
-/policies/** @fulll/chapter-validators-core @fulll/chapter-validators-platform-operations
-/modules/multi-runner/** @fulll/chapter-validators-core @fulll/chapter-validators-platform-operations
-
-# exclude example from CODEOWNER file. NOT USED YET
-# CHANGELOG.md

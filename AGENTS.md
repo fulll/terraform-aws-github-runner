@@ -47,6 +47,9 @@ of that directory.
 
 - Follow `CONTRIBUTING.md` and the existing pre-commit hooks in
   `.pre-commit-config.yaml`.
+- Use a Conventional Commit type in pull request titles (for example `feat:`,
+  `fix:`, `docs:`, `ci:`, or `chore:`); the repository enforces this with its
+  semantic pull request title check.
 - Format Terraform with `terraform fmt`; CI checks modules and examples with
   `fmt -recursive -check`.
 - Validate modules and examples after initialization with

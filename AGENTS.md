@@ -54,7 +54,8 @@ of that directory.
   `fmt -recursive -check`.
 - Validate modules and examples after initialization with
   `terraform init -backend=false` and `terraform validate`.
-- Run TFLint with `.tflint.hcl` and `.github/lint/tflint.tfvars`.
+- Run TFLint v0.65.0 with `.tflint.hcl` and `.github/lint/tflint.tfvars`;
+  use `--minimum-failure-severity=warning` so warnings fail the check.
 - The existing `terraform_test` CI job runs tests only for
   `modules/runners`, `modules/multi-runner`, and
   `modules/orchestration-providers/scale-set`; inspect their test files before

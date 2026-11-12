@@ -24,6 +24,7 @@ secrets.auto.tfvars
 *.gz
 *.tgz
 *.env*
+.claude/settings.local.json
 
 **/coverage/*
 

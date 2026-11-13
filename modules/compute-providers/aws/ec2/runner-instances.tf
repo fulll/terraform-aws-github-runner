@@ -221,7 +221,10 @@ resource "aws_launch_template" "runner" {
     for_each = var.config.metadata_options != null ? [] : [0]
 
     content {
-      instance_metadata_tags = "enabled"
+      http_endpoint               = "enabled"
+      http_tokens                 = "required"
+      http_put_response_hop_limit = 1
+      instance_metadata_tags      = "enabled"
     }
   }
 
